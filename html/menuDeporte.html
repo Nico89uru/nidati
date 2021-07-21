@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporte</title>
+    <!-- Letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/menus.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="">
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+    <header class="header">
+        <nav><a class="imagen__header imagen__small" href="index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__izquierdo">
+            <a class="nav__header" href="../inicio.html">Inicio</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/conocenos.html">Conocenos</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/contacto.html">Contacto</a>
+        </nav>
+        <nav><a class="imagen__header imagen__big" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__derecho margin__bottom">
+            <a class="nav__header" href="../html/menuDeporte.html">Menus</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/ventas.html">Venta Online</a>
+        </nav>
+    </header> 
+    <main class="main__menu">
+        <div class="contenedor__main-menu">
+            <div class="titulo__menu">
+                <h2 class="h2__main-menu">DEPORTE</h2>
+            </div>
+            <div class="columnas__main-menu">
+                <div class="menu__menu">
+                    <h3 class="h3__main-menu">DEPORTES</h3>
+                    <a class="a__menu" href="menuDeporte.html"><span class="letra__amarilla">DEPORTE</span></a>
+                    <a class="a__menu" href="menuNaturaleza.html">NATURALEZA</a> 
+                    <a class="a__menu" href="menuEspacio.html">EL ESPACIO</a>
+                    <a class="a__menu" href="menuTecnologia.html">TECNOLOGÍA</a>
+                    <a class="a__menu" href="contacto.html"><input class="boton" type="button" value="Más info..." title="Pinche aquí"></a>
+                    <img class="imagen__menu" src="../img/camara-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido__menu">
+                    <h3 class="h3__main-menu"><span class="letra__amarilla zoom">DE DEPORTES</span></h3>
+                    <p class="p__menu">
+                        La primera <a class="a__menu letra__amarilla zoom__menu" href="https://theluxonomist.es/wp-content/uploads/2018/02/fot-a.jpg" title="Pinche aquí">imagen 
+                        </a> que se recuerda de una fotografía deportiva fue realizada en 1909 por uno de los fotógrafos más reconocidos en el mundo, Charles 
+                        Colton. Era un partido de béisbol de la época, en blanco y negro y donde el polvo del terreno se confundía con el barro en el fragor 
+                        de la competición.
+                    </p> 
+                    <p class="p__menu">
+                        Mirar la historia a través de la fotografía es una buena manera de preservar la memoria colectiva; imágenes emblemáticas que 
+                        convierten el recuerdo en una forma de conocimiento, donde la parte más fascinante son los pequeños testimonios que recrean. 
+                        Historias de alegrías, de derrotas, impactantes, influyentes, de momentos de éxtasis y también de frustraciones.
+                    </p>
+                    <p class="p__menu"> 
+                        Todas las fotos cuentan un testimonio porque todas están llenas de vida; por eso las fotografías son el mayor libro de relatos 
+                        que existe. Si juntamos el arte de la fotografía al deporte, como elemento de pasión que mueve a millones de personas en el 
+                        mundo, encontraremos verdaderas iconografías, que nos hacen construir mejor un mensaje que quedará grabado en el tiempo.
+                    </p>
+                </div>
+                <div class="im">
+                    <img src="" id="imagen">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__bloque">
+            <div class="bloque">
+                <h4>Ubicación</h4>
+                <p>
+                    Avenida, Focan, junto a la casita de Luis, 2804. 
+                </p>
+            </div>
+            <div class="footer__nav bloque ">
+                <h4>Siguenos</h4>
+                <a href="www.instagram.es">Instagram</a>
+                <a href="www.facebook.es">Facebook</a>
+                <a href="www.twitter.es">Twitter</a>
+            </div>
+            <div class="bloque">
+                <h4>Contactanos</h4>
+                <p>
+                    765432
+                </p>
+                <p>
+                    info@projectcoffee.com
+                </p>
+                <p>
+                    Haz tu pedido Online
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                © COPYRIGHT 2021 TODOS LOS DERECHOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var imagenes=new Array(
+            '../img/sport 01.jpg',
+            '../img/sport 02.jpg',
+            '../img/sport 03.jpg',
+            '../img/sport 04.png',
+            );    
+        function rotarImagenes()
+        {        
+            var index=Math.floor((Math.random()*imagenes.length));       
+            document.getElementById("imagen").src=imagenes[index];
+        }    
+        onload=function()
+        {        
+            rotarImagenes();    
+            setInterval(rotarImagenes,1000);
+        }
+    </script>
+</body>
+</html> 

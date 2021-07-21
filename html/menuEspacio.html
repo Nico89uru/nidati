@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio</title>
+    <!-- Letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/menus.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="">
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+    <header class="header">
+        <nav><a class="imagen__header imagen__small" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__izquierdo">
+            <a class="nav__header" href="../inicio.html">Inicio</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/conocenos.html">Conocenos</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/contacto.html">Contacto</a>
+        </nav>
+        <nav><a class="imagen__header imagen__big" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__derecho margin__bottom">
+            <a class="nav__header" href="../html/menuDeporte.html">Menus</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/ventas.html">Venta Online</a>
+        </nav>
+    </header> 
+    <main class="main__menu">
+        <div class="contenedor__main-menu">
+            <div class="titulo__menu">
+                <h2 class="h2__main-menu">ESPACIO</h2>
+            </div>
+            <div class="columnas__main-menu">
+                <div class="menu__menu">
+                    <h3 class="h3__main-menu">ESPACIO</h3>
+                    <a class="a__menu" href="./menuDeporte.html">DEPORTE</a>
+                    <a class="a__menu" href="menuNaturaleza.html">NATURALEZA</a> 
+                    <a class="a__menu" href="menuEspacio.html"><span class="letra__amarilla">EL ESPACIO</span></a>
+                    <a class="a__menu" href="menuTecnologia.html">TECNOLOGÍA</a>
+                    <a class="a__menu" href="contacto.html"><input class="boton" type="button" value="Más info..." title="Pinche aquí"></a>
+                    <img class="imagen__menu" src="img/camara-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido__menu">
+                    <h3 class="h3__main-menu"><span class="letra__amarilla zoom">EL ESPACIO</span></h3>
+                    <p class="p__menu">
+                        Tomadas desde el cielo de Nuevo México, California, la cámara que capturaría las  
+                        <a href="https://www.nationalgeographic.com.es/fotografia/foto-del-dia/primera-fotografia-tierra_14169" 
+                        class="a__menu letra__amarilla zoom__menu" title="Pinche aquí" >primeras imágenes</a>  
+                        de nuestro planeta desde el espacio fue instalada por los americanos en un cohete V-2, un misil 
+                        balístico requisado a los alemanes durante la Segunda Guerra Mundial.</p> 
+                    <p class="p__menu"> 
+                        La serie fue obtenida en 1947 desde más de 100 kilómetros de altitud, inaugurando de este modo la 
+                        era de la fotografía espacial. En su retorno a la superficie, cohete y cámara resultaron hechos 
+                        añicos, no obstante el carrete protegido en un funda de acero se salvó. En la imagen se puede 
+                        apreciar la secuencia de fotografías completa publicada en 1984 por la NASA. La primera de todas 
+                        correspondería a la de la esquina inferior derecha.
+                    </p>
+                    <p class="p__menu" class="a__menu">
+                        Desde que fuera tomada la primera fotografía de la Tierra, varias han sido las imágenes que han 
+                        retratado nuestro planeta desde distintos lugares del sistema solar. Esta visión de nuestro hogar 
+                        ha permitido ver nuestro planeta con otros ojos y ha impulsado muchas acciones de concienciación 
+                        medioambiental.
+                    </p>
+                    
+                </div>
+                <div class="im">
+                    <img src="" id="imagen">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__bloque">
+            <div class="bloque">
+                <h4>Ubicación</h4>
+                <p>
+                    Avenida, Focan, junto a la casita de Luis, 2804. 
+                </p>
+            </div>
+            <div class="footer__nav bloque ">
+                <h4>Siguenos</h4>
+                <a href="www.instagram.es">Instagram</a>
+                <a href="www.facebook.es">Facebook</a>
+                <a href="www.twitter.es">Twitter</a>
+            </div>
+            <div class="bloque">
+                <h4>Contactanos</h4>
+                <p>
+                    765432
+                </p>
+                <p>
+                    info@projectcoffee.com
+                </p>
+                <p>
+                    Haz tu pedido Online
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                © COPYRIGHT 2021 TODOS LOS DERECHOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var imagenes=new Array(
+            '../img/space 01.jpg',
+            '../img/space 02.jpg',
+            '../img/space 03.jpg',
+            '../img/space 04.jpg',
+            );    
+        function rotarImagenes()
+        {        
+            var index=Math.floor((Math.random()*imagenes.length));       
+            document.getElementById("imagen").src=imagenes[index];
+        }    
+        onload=function()
+        {        
+            rotarImagenes();    
+            setInterval(rotarImagenes,1000);
+        }
+    </script>
+</body>
+</html> 

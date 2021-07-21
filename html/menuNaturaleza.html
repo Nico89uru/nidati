@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturaleza</title>
+    <!-- Letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/menus.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+    <header class="header">
+        <nav><a class="imagen__header imagen__small" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__izquierdo">
+            <a class="nav__header" href="../inicio.html">Inicio</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/conocenos.html">Conocenos</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/contacto.html">Contacto</a>
+        </nav>
+        <nav><a class="imagen__header imagen__big" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__derecho margin__bottom">
+            <a class="nav__header" href="../html/menuDeporte.html">Menus</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/ventas.html">Venta Online</a>
+        </nav>
+    </header> 
+    <main class="main__menu">
+        <div class="contenedor__main-menu">
+            <div class="titulo__menu">
+                <h2 class="h2__main-menu">NATURALEZA</h2>
+            </div>
+            <div class="columnas__main-menu">
+                <div class="menu__menu">
+                    <h3 class="h3__main-menu">NATURALEZA</h3>
+                    <a class="a__menu" href="menuDeporte.html">DEPORTE</a>
+                    <a class="a__menu" href="menuNaturaleza.html"><span class="letra__amarilla">NATURALEZA</span></a> 
+                    <a class="a__menu" href="menuEspacio.html">EL ESPACIO</a>
+                    <a class="a__menu" href="menuTecnologia.html">TECNOLOGÍA</a>
+                    <a class="a__menu" href="contacto.html"><input class="boton" type="button" value="Más info..." title="Pinche aquí"></a>
+                    <img class="imagen__menu" src="img/camara-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido__menu">
+                    <h3 class="h3__main-menu"><span class="letra__amarilla zoom">DE NATURALEZA</span></h3>
+                    <h4 class="h4__main-menu">Uno de los adelantos tecnológicos más importantes del siglo pasado es, sin 
+                        ninguna duda, la fotografía digital
+                    </h4> 
+                    <p class="p__menu">
+                        A lo largo de su historia, la especie humana ha llevado a la extinción a un gran número de 
+                        especies animales y vegetales. De muchas de ellas no se conserva más que algún esqueleto o 
+                        ilustración hecha por antiguos naturalistas. Pero no hay nada más impactante que ver fotografías 
+                        reales de especies como la cebra Quagga o el lobo marsupial, extinguidos el siglo pasado. Esta 
+                        fotografía, realizada en 1906 en el zoo de Washington, es un testimonio valioso de algunos de los 
+                        últimos ejemplares vivos del enigmático <a class="a__menu letra__amarilla zoom__menu" href="https://metode.es/wp-content/uploads/2011/06/74b-66.jpg" 
+                        title="Pinche aquí" >lobo marsupial</a>  (Thylacinus cynocephalus), declarado extinto en 1936. /
+                        E. J. Keller
+                        </p>
+                    <p class="p__menu a__menu">Con el inicio de la investigación científica los ilustradores naturalistas 
+                        fueron una parte esencial en los trabajos de campo y en las expediciones que partían en busca 
+                        de nuevas tierras, plantas y animales. Ellos acompañaban a los naturalistas inmortalizando en 
+                        dibujos y pinturas las nuevas especies descubiertas. Pero no sería hasta 1816 cuando el francés 
+                        Nicéphore Niepce consiguió realizar las primeras fotografías.  
+                    </p>                   
+                </div>
+                <div class="im">
+                    <img src="" id="imagen">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__bloque">
+            <div class="bloque">
+                <h4>Ubicación</h4>
+                <p>
+                    Avenida, Focan, junto a la casita de Luis, 2804. 
+                </p>
+            </div>
+            <div class="footer__nav bloque ">
+                <h4>Siguenos</h4>
+                <a href="www.instagram.es">Instagram</a>
+                <a href="www.facebook.es">Facebook</a>
+                <a href="www.twitter.es">Twitter</a>
+            </div>
+            <div class="bloque">
+                <h4>Contactanos</h4>
+                <p>
+                    765432
+                </p>
+                <p>
+                    info@projectcoffee.com
+                </p>
+                <p>
+                    Haz tu pedido Online
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                © COPYRIGHT 2021 TODOS LOS DERECHOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var imagenes=new Array(
+            '../img/naturaleza 06.jpg',
+            '../img/naturaleza 05.jpg',
+            '../img/naturaleza 04.jpg',
+            '../img/naturaleza 01.jpg',
+            '../img/naturaleza 02.jpg',
+            '../img/naturaleza 03.jpg',
+            );
+        function rotarImagenes()
+        {        
+            var index=Math.floor((Math.random()*imagenes.length));       
+            document.getElementById("imagen").src=imagenes[index];
+        }    
+        onload=function()
+        {        
+            rotarImagenes();    
+            setInterval(rotarImagenes,1000);
+        }
+    </script>    
+</body>
+</html> 

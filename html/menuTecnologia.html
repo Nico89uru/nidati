@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia</title>
+    <!-- Letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/menus.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="">
+    <!-- JavaScript -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+    <header class="header">
+        <nav><a class="imagen__header imagen__small" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__izquierdo">
+            <a class="nav__header" href="../inicio.html">Inicio</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/conocenos.html">Conocenos</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/contacto.html">Contacto</a>
+        </nav>
+        <nav><a class="imagen__header imagen__big" href="../html/index.html"><h1 class="h1__header">Project Photo</h1></a></nav>
+        <nav class="nav__derecho margin__bottom">
+            <a class="nav__header" href="../html/menuDeporte.html">Menus</a>
+            <span class="border__nav"></span>
+            <a class="nav__header" href="../html/ventas.html">Venta Online</a>
+        </nav>
+    </header> 
+    <main class="main__menu">
+        <div class="contenedor__main-menu">
+            <div class="titulo__menu">
+                <h2 class="h2__main-menu">TECNOLOGIA</h2>
+            </div>
+            <div class="columnas__main-menu">
+                <div class="menu__menu">
+                    <h3 class="h3__main-menu">TECNOLOGIA</h3>
+                    <a class="a__menu" href="menuDeporte.html">DEPORTE</a>
+                    <a class="a__menu" href="menuNaturaleza.html">NATURALEZA</a> 
+                    <a class="a__menu" href="menuEspacio.html">EL ESPACIO</a>
+                    <a class="a__menu" href="menuTecnologia.html"><span class="letra__amarilla">TECNOLOGÍA</span></a>
+                    <a class="a__menu" href="contacto.html"><input class="boton" type="button" value="Más info..." title="Pinche aquí"></a>
+                    <img class="imagen__menu" src="img/camara-removebg-preview.png" alt="">
+                </div>
+                <div class="contenido__menu">
+                    <h3 class="h3__main-menu"><span class="letra__amarilla zoom">DE TECNOLOGIA</span></h3>
+                    <h4 class="h4__main-menu">Uno de los adelantos tecnológicos más importantes del siglo pasado es, sin 
+                        ninguna duda, la fotografía digital
+                    </h4> 
+                    <p class="p__menu a__menu">Aquí las fotos se registran con sensores digitales y circuitos integrados, 
+                        otra cosa muy distinta es su almacenamiento, ya que inicialmente no se empezó a grabar en soportes 
+                        digitales, no había memorias tal y como las conocemos ahora. Lo que se utilizaban eran cintas, 
+                        soportes magnéticos. <br> Como podéis imaginar, tener las fotos transformadas en unos y ceros nos 
+                        llevó a poder enviarlas con y sin cables con mayor facilidad. En cuanto al captor digital, la 
+                        verdadera magia se produjo con el CCD, años atrás desarrollado para proyectos muy especiales, pero 
+                        que en manos de Kodak llegó a un <a href="https://i.blogs.es/457687/kodak-1975/1366_2000.jpg" 
+                        class="a__menu letra__amarilla zoom__menu" title="Pinche aquí">prototipo de cámara</a>   en 1975. El paso del tiempo colocó a 
+                        la otra tecnología de captores - CMOS - como líder del mercado, pero esto ya no es el tema de nuestro 
+                        artículo. <br> Sin querer entrar demasiado en tipos de sensores o cómo funcionan, queremos explicar 
+                        que ese captor hace el papel de la película fotográfica de las anteriores cámaras. ¿Cómo? Pues está 
+                        compuesto por semiconductores que captan los fotones, a mayor intensidad de la luz, mayor carga 
+                        eléctrica. Cada una de esas células fotosensibles corresponderá con un píxel.
+                    </p>                    
+                </div>
+                <div class="im">
+                    <img src="" id="imagen">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__bloque">
+            <div class="bloque">
+                <h4>Ubicación</h4>
+                <p>
+                    Avenida, Focan, junto a la casita de Luis, 2804. 
+                </p>
+            </div>
+            <div class="footer__nav bloque ">
+                <h4>Siguenos</h4>
+                <a href="www.instagram.es">Instagram</a>
+                <a href="www.facebook.es">Facebook</a>
+                <a href="www.twitter.es">Twitter</a>
+            </div>
+            <div class="bloque">
+                <h4>Contactanos</h4>
+                <p>
+                    765432
+                </p>
+                <p>
+                    info@projectcoffee.com
+                </p>
+                <p>
+                    Haz tu pedido Online
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">
+                © COPYRIGHT 2021 TODOS LOS DERECHOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var imagenes=new Array(
+            '../img/tecnologia 01.jpg',
+            '../img/tecnologia 02.jpg',
+            '../img/tecnologia 03.jpg',
+            '../img/tecnologia 04.jpg',
+            ); 
+        function rotarImagenes()
+        {        
+            var index=Math.floor((Math.random()*imagenes.length));       
+            document.getElementById("imagen").src=imagenes[index];
+        }    
+        onload=function()
+        {        
+            rotarImagenes();    
+            setInterval(rotarImagenes,1000);
+        }
+    </script>
+</body>
+</html> 
